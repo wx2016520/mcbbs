@@ -1,0 +1,44 @@
+/*分页*/
+.text-center{
+    text-align: center;
+    display: block;
+}
+.pagination{
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.pagination li{
+    display: inline;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    z-index: 2;
+    cursor: default;
+    color: #fff;
+    background-color: #46c37b;
+    border-color: #34a263;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 5px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #919191;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    margin: 5px;
+    border-radius: 4px;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    cursor: default;
+    color: #fff;
+    background-color: #46c37b;
+    border-color: #34a263;
+}

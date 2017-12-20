@@ -1,0 +1,39 @@
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.padding-big{
+	border: 1px solid orange;
+	margin-left: 15%;
+	width: 64%;
+	height: 180px;
+}
+.padding-top stong{
+	font-size: 20px;
+}
+.padding-big a{
+	margin-top: 20px;
+}
+.bg-yellow{
+	width: 100px;
+	height: 50px;
+	line-height: 40px;
+	background-color: #f60;
+	border-radius: 10px;
+}
+.bg-yellow:hover{
+	width: 100px;
+	height: 50px;
+	line-height: 40px;
+	background-color: #ffa200;
+	border-radius: 10px;
+}
+.admin{
+	width: 140px;
+	height: 50px;
+	line-height: 40px;
+	background-color: gainsboro;
+	border-radius: 10px;
+}

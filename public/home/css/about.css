@@ -1,0 +1,55 @@
+.container{
+    height: 150px;
+    padding: 40px 0;
+    font-size: 16px;
+    color: #fff;
+    background-image: url('../img/about-us-img02.jpg');
+}
+.about-content{
+    min-height: 430px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    overflow: auto;
+}
+.about-left{
+    float: left;
+    width: 49%;
+}
+.about-left h2{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+.about-left p{
+
+}
+.about-remake{
+}
+.about-remake span{
+    font-size: 14px;
+    padding: 5px;
+}
+#allmap {height: 500px;width:49%;overflow: hidden;float: right}
+#result {width:100%;font-size:12px;}
+dl,dt,dd,ul,li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+dt{
+    font-size:14px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    border-bottom:1px dotted #000;
+    padding:5px 0 5px 5px;
+    margin:5px 0;
+}
+dd{
+    padding:5px 0 0 5px;
+}
+li{
+    line-height:28px;
+}

@@ -1,0 +1,109 @@
+﻿/* -----站点首页样式------ */
+.rightCont .siteShow{height: 255px;}
+.sitePc {float: left}
+.siteMessage.siteWapmessage,.siteMessage.sitePcmessage{height: 447px;}
+.siteMessage {width: 555px;border:1px solid #dcdcdc;height: 255px}
+.siteMessage .siteMark{line-height: 36px;margin-top: 9px;}
+.siteMessage .siteMark p{float: left;width: 100px;font-size: 18px;padding-left: 20px;}
+.siteMessage .siteMark span{float: right;font-size: 12px;padding-right: 19px;}
+.siteMessage .siteMark span[state=open] {color: #84d558;}
+.siteMessage .siteMark span[state=update] {color: #ff8a00;}
+.siteMessage .messageCont{height: 229px;margin-top: -21px;}
+.siteMessage .contTop{height: 169px;border-bottom: 1px dashed #e5e5e5;}
+.sitePc .contTop{background: url(../fonts/cf954e7df7fa45d4b4687e495b53aeb2.woff);}
+.chartTitle{margin-top: 10px;line-height: 30px;font-size: 14px;color: #666;}
+.chartTitle i{display: inline-block;width: 30px;height: 30px;vertical-align: middle;background-position: -4px -31px;}
+.chartTitle span{font-size: 12px;color: #b6b6b6;}
+.tooltipTime{font-size: 12px;color: #999;line-height:26px;padding:0 20px 0 5px;}
+.dataPc, .dataPhone{line-height: 24px;padding-left:5px;font-size: 12px;}
+.dataPc {color: #59c4ff;}
+.dataPhone{color: #9de476;}
+.dataPc span, .dataPhone span{color: #999;}
+
+/* 获取虚拟货币弹窗 */
+.qdmoney-panel{position: fixed;z-index: 1001;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.8);}
+.qdmoney-box{position: absolute;top:50%;left:50%;width: 532px;height: 390px;margin:-195px 0 0 -266px;background: #fff;border-radius: 4px;-webkit-animation: moneyBoxmove 1s both;-moz-animation: moneyBoxmove 1s both;animation: moneyBoxmove 1s both;}
+.qdmoney-box .btnactive{position: absolute;right: 40px;bottom: 25px;display: block;width: 110px;height: 34px;line-height: 34px;background: #e0b126;text-align: center;font-size: 14px;color: #fff;border-radius: 30px;text-decoration: none;}
+.qdmoney-tit{position:relative;background: url(../img/qdbbg.png) no-repeat;width: 532px;height: 168px;}
+.qdmoney-con{padding: 30px 40px 25px;}
+.qdmoney-con>p{margin-bottom:10px;line-height:16px;font-size: 14px;color: #333;}
+.wqd-close-wraning{display: inline-block;float: right;width: 20px;height: 20px;margin: 15px;cursor: pointer;background-position: -215px -211px;}
+.wqd-close-wraning:hover{background-position: -216px -241px;}
+.qdmoneyAnimate{-webkit-animation: moneyBoxhide 1s both;-moz-animation: moneyBoxhide 1s both;animation: moneyBoxhide 1s both;}
+/*浏览器提示样式*/
+.navi_check_backC{z-index:1000;width: 100%; height: 100%; background: rgba(0,0,0,.6); position: fixed; left: 0; top: 0;  }
+.navi_check{position: absolute; width: 506px; height: 352px; background-color: #fdfdfd; margin-top: -176px; margin-left: -253px; left: 50%; top:50%;border: 1px solid transparent;border-radius: 4px; }
+.navi_check p.tip{line-height: 50px; background-color: #f5f3f4; border-bottom: 1px solid #dcdcdc; padding-left: 20px; margin: 0; font-size: 16px; color: #333; }
+.navi_check p.tip>img{float: right; margin-top: 20px; margin-right: 20px;width: 10px; }
+.navi_check p.tip>img:hover{cursor: pointer; }
+.navi_check p.desc{font-size: 12px; color: #58c5ff; text-align: center; margin-top: 30px; margin-bottom: 20px; }
+.navi_check p.tell{font-size: 12px; color: #999; text-align: center; }
+.navi_check .conten{padding: 32px; font-size: 14px; color: #333; }
+.navi_check li{font-size:12px;color:#666;list-style-type: none; float: left; width: 108px; height: 100px; text-align: center; border:1px dashed transparent; border-radius: 4px; }
+.navi_check li:hover{border-color: #b6b6b6; }
+.navi_check li>a{margin-top: 15px; display: block; margin-bottom: 10px; }
+.navi_check li>a>img{width: 48px; }
+.navi_check li>a>span{display: block; margin-top: 10px; color: #666; }
+
+/* 虚拟货币弹窗动画 */
+@keyframes moneyBoxmove{
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes moneyBoxmove{
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes moneyBoxmove{
+    from {
+        opacity: 0;
+        -moz-transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@keyframes moneyBoxhide{
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+}
+@-webkit-keyframes moneyBoxhide{
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-20%);
+    }
+}
+@-moz-keyframes moneyBoxhide{
+    from {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        -moz-transform: translateY(-20%);
+    }
+}

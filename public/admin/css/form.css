@@ -1,0 +1,105 @@
+/*表单css*/
+.form_main{
+    margin-left: 20px;
+    margin-top: 16px;
+}
+.form_select{
+    display: inline-block;
+    font-size: 14px;
+}
+.select_title{
+    height: 38px;
+    line-height: 38px;
+    margin: 0px 5px 0px 0px;
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+}
+.form_time{
+    display: inline-block
+}
+.startDate{
+    height: 38px;
+    width: 242px;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+}
+.date-step-span {
+    display: inline-block;
+    width: 38px;
+    text-align: center;
+    line-height: 38px;
+}
+.endDate{
+    height: 38px;
+    width: 242px;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+}
+.form_input{
+    margin: 0px 5px 0px 5px;
+    display: inline-block
+}
+.keyword{
+    border: 1px solid #e6e6e6;
+    height: 38px;
+    width: 214px;
+    line-height: 38px;
+    padding-left: 5px;
+    border-radius: 2px
+}
+.inpun_focus:focus{
+    border: 1px solid #28B5D6;
+}
+.form_button{
+    margin: 0px 5px 0px 5px;
+    display: inline-block
+}
+.submit_btn{
+    height: 38px;
+    line-height: 38px;
+    width: 40px;
+    color: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #28B5D6;
+    background-color: #28B5D6;
+}
+.form_right{
+    float: right;
+    margin-right: 20px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    display: inline-block;
+}
+.rush{
+    display: inline-block;
+}
+.rush_btn{
+    height: 38px;
+    width: 43px;
+    line-height: 38px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.add{
+    display: inline-block;
+}
+.add_btn{
+    height: 38px;
+    width: 100px;
+    color: #fff;
+    border: 1px solid #09c;
+    background-color: #09c;
+    border-radius: 5px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+.clear_span{
+    margin: 15px;
+    height: 5px;
+    background-color: #fff;
+}

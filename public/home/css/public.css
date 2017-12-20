@@ -1,0 +1,26 @@
+﻿.mc-content{
+    min-height: 430px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    overflow: auto;
+}
+.mc-content-index{
+    min-height: 430px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+}
+.mc-content-detail{
+    width: 63%;
+    min-height: 430px;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    overflow: auto;
+}

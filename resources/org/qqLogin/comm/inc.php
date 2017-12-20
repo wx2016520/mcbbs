@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"101434440","appkey":"04381598d0f2b0b3b2c00f41acc7cecf","callback":"https://www.wxwcc.xin/qqcallback","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}
