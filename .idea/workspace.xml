@@ -2,8 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c79601-f9ad-4d37-8042-a4ce891cf5ff" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/img_2017072610904.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/img_2017072616675.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/img_2017072666231.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/img_2017072675905.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/img_2017072699312.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/org_2017072610904.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/org_2017072616675.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/org_2017072666231.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/org_2017072675905.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/org_2017072699312.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/thumb_2017072610904.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/thumb_2017072616675.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/thumb_2017072666231.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/thumb_2017072675905.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170726/thumb_2017072699312.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072740812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072747395.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072751740.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072768701.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072771783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072774658.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/img_2017072778525.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072740812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072747395.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072751740.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072768701.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072771783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072774658.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/org_2017072778525.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072740812.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072747395.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072751740.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072768701.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072771783.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072774658.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploadfile/images/20170727/thumb_2017072778525.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/article_detail.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/article_detail.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +56,61 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="article.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home/article.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-330">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article_detail.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home/article_detail.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web-layou.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/public/web-layou.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1110">
+              <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -44,6 +132,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Home/IndexController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Home/LoginController.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/article.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/article_detail.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -200,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513864655613</updated>
       <workItem from="1513864656877" duration="3194000" />
-      <workItem from="1514020340010" duration="242000" />
+      <workItem from="1514020340010" duration="5059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3436000" />
+    <option name="totallyTimeSpent" value="8253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -343,14 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Home/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -367,10 +450,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/article.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/public/web-layou.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1110">
+          <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/article_detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
