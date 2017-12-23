@@ -24,12 +24,16 @@
 		      		</h2>
 	    		</div>
   			</div>
+            @if($v->art_img)
 		    <div class="media">
 			    <div class="media-left">
 			        <a href=""><img class="thumb-img"  src="{{$v->art_img}}" alt="百度"></a>
 			    </div>
-		    	<div class="media-body">{!! str_limit($v->art_content,$limit=350,$end='...') !!}</div>
+		    	<div class="media-body">{!! str_limit($v->art_content,$limit=270,$end='...') !!}</div>
 		  	</div>
+            @else
+            <div class="content">{!! str_limit($v->art_content,$limit=270,$end='...') !!}</div>
+            @endif
   		</article>
   		@endforeach
     </div>
