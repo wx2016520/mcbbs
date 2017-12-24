@@ -172,6 +172,18 @@
                             <span class="text-normal">文章列表</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="{{url('admin/article/category')}}">
+                            <b class="sidebar-icon"><img src="{{asset('/public/admin/img/icon_cost.png')}}" width="16" height="16" /></b>
+                            <span class="text-normal">分类列表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/article/tag')}}">
+                            <b class="sidebar-icon"><img src="{{asset('/public/admin/img/icon_cost.png')}}" width="16" height="16" /></b>
+                            <span class="text-normal">标签列表</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!--

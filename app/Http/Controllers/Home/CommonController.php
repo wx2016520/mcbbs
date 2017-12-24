@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Model\Article;
+use App\Http\Model\ArticleTag;
 use App\Http\Model\Navigation;
 use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
@@ -12,11 +13,6 @@ class CommonController extends Controller
 {
     public function __construct()
     {
-//        //站长推荐的hot 6篇文章
-//        $click = Article::orderBy('art_view','desc')->take(5)->get(['art_id','art_title','art_content']);
-//
-//        //最新发布的new 8篇文章
-//        $new= Article::orderBy('pub_time','desc')->take(8)->get(['art_id','art_title']);
         /*获取点击率最高的6篇文章*/
         $article=Article::orderBy('art_view','desc')->take(5)->get(['art_id','art_title','art_img']);
         /*获取最新发布的6篇文章*/
@@ -29,7 +25,9 @@ class CommonController extends Controller
         /*查询首页二级导航*/
         $snav = Navigation::where('navigation_type','=','1')->where('navigation_open','=','1')->where('navigation_fid','!=','0')
             ->orderBy('navigation_order','asc')->take(10)->get(['navigation_id','navigation_name','navigation_url','navigation_fid','navigation_order','navigation_url','navigation_window','navigation_open']);
-        View::share(compact('fnav','snav','article','new','reply'));
+        /*查询热门标签*/
+        $tag=ArticleTag::orderBy('tag_time','desc')->take(5)->get(['tag_id','tag_name']);
+        View::share(compact('fnav','snav','article','new','reply','tag'));
     }
 
     public function debug($val,$dump=false,$exit=true)

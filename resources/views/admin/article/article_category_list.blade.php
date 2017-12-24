@@ -4,7 +4,7 @@
     <div class="authority">
         <div class="authority-head">
             <div class="manage-head">
-                <h6 class="layout padding-left manage-head-con">文章列表
+                <h6 class="layout padding-left manage-head-con">分类列表
                     <span class="fr text-small text-normal padding-top">发布时间：2016-07-08</span>
                     <span class="fr margin-large-right padding-top text-small text-normal">最新版本：<em class="text-main">v1.0.0.0</em></span>
                 </h6>
@@ -12,32 +12,20 @@
         </div>
         <!--  表单搜索  -->
         <div class="form_main" >
-            <form action="{{url('admin/article')}}" method="post" class="" id="">
+            <form action="{{url('admin/article/category')}}" method="post" class="" id="">
                 {{csrf_field()}}
-                <div class="layui-form-pane" style="display: inline-block;margin-bottom: -13px">
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">截止日期</label>
-                        <div class="layui-input-inline">
-                            <input class="layui-input inpun_focus" name="navigation_starttime" placeholder="开始日" id="LAY_demorange_s" value="">
-                        </div>
-                        <div class="layui-input-inline">
-                            <input class="layui-input inpun_focus" name="navigation_endtime" placeholder="截止日" id="LAY_demorange_e" value="">
-                        </div>
-                    </div>
-                </div>
-
                 <div class="form_input">
-                    <input type="text" name="art_title" class="keyword inpun_focus" placeholder="请输入标题关键字"  value="{{$keywords['art_title']}}">
+                    <input type="text" name="category_title" class="keyword inpun_focus" placeholder="请输入标题关键字"  value="{{$keywords['category_title']}}">
                 </div>
                 <div class="form_button">
                     <input type="submit" value="搜索" class="layui-btn layui-btn-normal" style="">
                 </div>
                 <div class="form_right">
                     <div class="rush">
-                        <a href="{{url('admin/article')}}"><span class="layui-btn layui-btn-normal"><span class="fa fa-refresh"></span></span></a>
+                        <a href="{{url('admin/article/category')}}"><span class="layui-btn layui-btn-normal"><span class="fa fa-refresh"></span></span></a>
                     </div>
                     <div class="add">
-                        <a href="{{url('admin/article/add')}}"><span class="add_btn layui-btn layui-btn-normal">＋新增文章</span></a>
+                        <a href="{{url('admin/article/category/add')}}"><span class="add_btn layui-btn layui-btn-normal">＋新增分类</span></a>
                     </div>
                 </div>
             </form>
@@ -52,44 +40,35 @@
                             <col width="200">
                             <col width="200">
                             <col width="100">
-                            <col width="100">
-                            <col width="100">
                             <col width="200">
-                            <col width="100">
-                            <col width="100">
+                            <col width="200">
                             <col width="180">
                         </colgroup>
                         <thead>
                         <tr>
                             <th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
-                            <th>标题</th>
-                            <th>作者</th>
-                            <th>分类</th>
-                            <th>标签</th>
-                            <th>点击量</th>
-                            <th>评论数</th>
-                            <th>更新时间</th>
-                            <th>是否显示</th>
-                            <th>属性</th>
+                            <th>分类编号</th>
+                            <th>父级编号</th>
+                            <th>分类标题</th>
+                            <th>分类状态</th>
+                            <th>操作者</th>
+                            <th>添加时间</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($data as $v)
                         <tr>
-                            <td><input type="checkbox" name="" lay-skin="primary" value="{{$v->art_id}}"></td>
-                            <td>{{str_limit($v->art_title,$limit=30,$end='...')}}</td>
-                            <td>{{$v->user_name}}</td>
+                            <td><input type="checkbox" name="" lay-skin="primary" value="{{$v->category_id}}"></td>
+                            <td>{{$v->category_id}}</td>
+                            <td>{{$v->category_fid}}</td>
                             <td>{{$v->category_title}}</td>
-                            <td>{{$v->tag_name}}</td>
-                            <td>{{$v->art_view}}</td>
-                            <td>{{$v->art_reply}}</td>
-                            <td>{{$v->art_time}}</td>
-                            <td> @if($v->art_open==1) 显示 @else 关闭  @endif</td>
-                            <td>@if($v->art_status==1) 推荐 @else 置顶 @endif</td>
+                            <td> @if($v->category_status==1) 显示 @else 关闭  @endif</td>
+                            <td>{{$v->user_name}}</td>
+                            <td>{{$v->category_time}}</td>
                             <td>
-                                <a href="javascript:;" artid="{{$v->art_id}}" class="del_btn"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 删除</span></a>
-                                <a href="{{url('admin/article/'.$v->art_id.'/edit')}}"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 编辑</span></a>
+                                <a href="javascript:;" artid="{{$v->category_id}}" class="del_btn"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 删除</span></a>
+                                <a href="{{url('admin/article/category/'.$v->category_id.'/edit')}}"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 编辑</span></a>
                             </td>
                         </tr>
                        @endforeach
@@ -110,10 +89,10 @@
     $(".del_btn").click(function(){
         //询问框
         var id = $(this).attr('artid');
-        layer.confirm('您确定要删除此文章吗？', {
+        layer.confirm('您确定要删除此分类吗？', {
             btn: ['确定','取消'] //按钮
         }, function(){
-            $.post("{{url('admin/article/destroy')}}/"+id, { "_token": "{{csrf_token()}}", "_method": "delete"},
+            $.post("{{url('admin/article/category/destroy')}}/"+id, { "_token": "{{csrf_token()}}", "_method": "delete"},
                 function(data) {
                     location.href=location.href;
                     if(data.flag==0)layer.msg(data.msg, {icon: 6}); //信息框-例4

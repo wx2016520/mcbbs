@@ -40,14 +40,13 @@
             </div>
             <span class="clear_span" ></span>
             <div class="layui-form-item">
-                <label class="layui-form-label">所属栏目</label>
+                <label class="layui-form-label">文章分类</label>
                 <div class="layui-input-block" style="width: 250px;">
-                    <select name="art_type" lay-filter="aihao" style="width: 250px;">
-                        <option value=""></option>
-                        <option value="1" selected="">php</option>
-                        <option value="2">nginx</option>
-                        <option value="3">mysql</option>
-                        <option value="4">java</option>
+                    <select name="art_category" lay-filter="aihao" style="width: 250px;">
+                        <option value="0" selected=""></option>
+                        @foreach($category as $v)
+                        <option value="{{$v->category_id}}">{{$v->category_title}}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
@@ -56,11 +55,10 @@
                 <label class="layui-form-label">Tag标签</label>
                 <div class="layui-input-block" style="width: 250px;">
                     <select name="art_tag" lay-filter="aihao" style="width: 250px;">
-                        <option value=""></option>
-                        <option value="1" selected="">nginx</option>
-                        <option value="2">php</option>
-                        <option value="3">mysql</option>
-                        <option value="4">java</option>
+                        <option value="0" selected=""></option>
+                        @foreach($tag as $v)
+                        <option value="{{$v->tag_id}}">{{$v->tag_name}}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>

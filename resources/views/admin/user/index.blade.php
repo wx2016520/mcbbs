@@ -12,7 +12,7 @@
         </div>
         <!--  表单搜索  -->
         <div class="form_main" >
-            <form action="{{url('admin/article')}}" method="post" class="" id="">
+            <form action="{{url('admin/user')}}" method="post" class="" id="">
                 {{csrf_field()}}
                 <div class="layui-form-pane" style="display: inline-block;margin-bottom: -13px">
                     <div class="layui-form-item">
@@ -27,17 +27,17 @@
                 </div>
 
                 <div class="form_input">
-                    <input type="text" name="navigation_name" class="keyword inpun_focus" placeholder="请输入用户名关键字"  value="">
+                    <input type="text" name="user_name" class="keyword inpun_focus" placeholder="请输入用户名关键字"  value="">
                 </div>
                 <div class="form_button">
                     <input type="submit" value="搜索" class="layui-btn layui-btn-normal" style="">
                 </div>
                 <div class="form_right">
                     <div class="rush">
-                        <a href="{{url('admin/article')}}"><span class="layui-btn layui-btn-normal"><span class="fa fa-refresh"></span></span></a>
+                        <a href="{{url('admin/user')}}"><span class="layui-btn layui-btn-normal"><span class="fa fa-refresh"></span></span></a>
                     </div>
                     <div class="add">
-                        <a href="{{url('admin/article/add')}}"><span class="add_btn layui-btn layui-btn-normal">＋新增用户</span></a>
+                        <a href="{{url('admin/user/add')}}"><span class="add_btn layui-btn layui-btn-normal">＋新增用户</span></a>
                     </div>
                 </div>
             </form>
@@ -49,7 +49,6 @@
                         <colgroup>
                             <col width="50">
                             <col width="150">
-                            <col width="100">
                             <col width="100">
                             <col width="100">
                             <col width="300">
@@ -64,7 +63,6 @@
                             <th>用户名</th>
                             <th>手机号</th>
                             <th>性别</th>
-                            <th>等级</th>
                             <th>个性签名</th>
                             <th>注册时间</th>
                             <th>更新时间</th>
@@ -75,18 +73,17 @@
                         <tbody>
                         @foreach($data as $v)
                         <tr>
-                            <td><input type="checkbox" name="" lay-skin="primary" value="{{$v->art_id}}"></td>
+                            <td><input type="checkbox" name="" lay-skin="primary" value="{{$v->user_id}}"></td>
                             <td>{{$v->user_name}}</td>
                             <td>{{$v->user_phone}}</td>
-                            <td>{{$v->user_sex}}</td>
+                            <td>@if($v->user_sex == 1) 男 @else 女 @endif</td>
                             <td>{{$v->user_name}}</td>
-                            <td>{{$v->user_name}}</td>
-                            <td>{{$v->user_name}}</td>
-                            <td>{{$v->user_name}}</td>
+                            <td>{{$v->add_time}}</td>
+                            <td>{{$v->login_time}}</td>
                             <td>{{$v->user_name}}</td>
                             <td>
-                                <a href="javascript:;" artid="{{$v->art_id}}" class="del_btn"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 删除</span></a>
-                                <a href="{{url('admin/article/'.$v->art_id.'/edit')}}"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 编辑</span></a>
+                                <a href="javascript:;" artid="{{$v->user_id}}" class="del_btn"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 删除</span></a>
+                                <a href="{{url('admin/user/'.$v->user_id.'/edit')}}"><span class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon"></i> 编辑</span></a>
                             </td>
                         </tr>
                         @endforeach
@@ -106,10 +103,10 @@
         $(".del_btn").click(function(){
             //询问框
             var id = $(this).attr('artid');
-            layer.confirm('您确定要删除此文章吗？', {
+            layer.confirm('您确定要删除此用户吗？', {
                 btn: ['确定','取消'] //按钮
             }, function(){
-                $.post("{{url('admin/article/destroy')}}/"+id, { "_token": "{{csrf_token()}}", "_method": "delete"},
+                $.post("{{url('admin/user/destroy')}}/"+id, { "_token": "{{csrf_token()}}", "_method": "delete"},
                     function(data) {
                         location.href=location.href;
                         if(data.flag==0)layer.msg(data.msg, {icon: 6}); //信息框-例4

@@ -67,15 +67,22 @@ Route::group(['middleware' => ['web']], function () {
     Route::any('admin/nav/destroy/{id}', 'Admin\NavController@destroy');
 	//后台-友情链接
     Route::get('admin/link', 'Admin\LinkController@index');
-	//后台-用户列表
-    Route::get('admin/user', 'Admin\UserController@index');
-	//后台-文章列表
-    Route::any('admin/article', 'Admin\ArticleController@index');
-	//后台-文章列表
-    Route::any('admin/article', 'Admin\ArticleController@index');
-//	//后台-文章测试
-//    Route::any('admin/article/{id}', 'Admin\ArticleController@test');
 
+	//后台-用户列表
+    Route::any('admin/user', 'Admin\UserController@index');
+    //后台-用户新增
+    Route::get('admin/user/add', 'Admin\UserController@create');
+    //后台-用户新增保存
+    Route::post('admin/user/store', 'Admin\UserController@store');
+    //后台-用户编辑
+    Route::get('admin/user/{id}/edit', 'Admin\UserController@edit');
+    //后台-用户更新
+    Route::any('admin/user/update/{id}', 'Admin\UserController@update');
+    //后台-用户删除
+    Route::any('admin/user/destroy/{id}', 'Admin\UserController@destroy');
+
+	//后台-文章列表
+    Route::any('admin/article', 'Admin\ArticleController@index');
     //后台-文章新增
     Route::get('admin/article/add', 'Admin\ArticleController@create');
     //后台-文章新增保存
@@ -86,6 +93,32 @@ Route::group(['middleware' => ['web']], function () {
     Route::any('admin/article/update/{id}', 'Admin\ArticleController@update');
     //后台-文章删除
     Route::any('admin/article/destroy/{id}', 'Admin\ArticleController@destroy');
+
+    //后台-文章分类
+    Route::any('admin/article/category', 'Admin\ArticleCategoryController@index');
+    //后台-文章分类新增
+    Route::get('admin/article/category/add', 'Admin\ArticleCategoryController@create');
+    //后台-文章分类新增保存
+    Route::post('admin/article/category/store', 'Admin\ArticleCategoryController@store');
+    //后台-文章分类编辑
+    Route::get('admin/article/category/{id}/edit', 'Admin\ArticleCategoryController@edit');
+    //后台-文章分类更新
+    Route::any('admin/article/category/update/{id}', 'Admin\ArticleCategoryController@update');
+    //后台-文章分类删除
+    Route::any('admin/article/category/destroy/{id}', 'Admin\ArticleCategoryController@destroy');
+
+    //后台-文章标签
+    Route::any('admin/article/tag', 'Admin\ArticleTagController@index');
+    //后台-文章标签新增
+    Route::get('admin/article/tag/add', 'Admin\ArticleTagController@create');
+    //后台-文章标签新增保存
+    Route::post('admin/article/tag/store', 'Admin\ArticleTagController@store');
+    //后台-文章标签编辑
+    Route::get('admin/article/tag/{id}/edit', 'Admin\ArticleTagController@edit');
+    //后台-文章标签更新
+    Route::any('admin/article/tag/update/{id}', 'Admin\ArticleTagController@update');
+    //后台-文章标签删除
+    Route::any('admin/article/tag/destroy/{id}', 'Admin\ArticleTagController@destroy');
 
 	//后台-段子列表
     Route::get('admin/sentence', 'Admin\SentenceController@index');

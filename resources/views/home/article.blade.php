@@ -67,9 +67,9 @@
 	     		<h3 class="panel-title"><i class="es-icon es-icon-loyalty"></i>热门标签</h3>
 	    	</div>
 	    	<div class="panel-body">
-	            <a class="btn-tag" href=""> 高一</a>
-	            <a class="btn-tag" href=""> 高二</a>
-	            <a class="btn-tag" href=""> 高三</a>
+                @foreach($tag as $v)
+	            <a class="btn-tag" href=""> {{$v->tag_name}}</a>
+                @endforeach
 	        </div>
   		</div>
 

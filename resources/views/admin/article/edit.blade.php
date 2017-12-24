@@ -41,14 +41,13 @@
                 </div>
                 <span class="clear_span" ></span>
                 <div class="layui-form-item">
-                    <label class="layui-form-label">所属栏目</label>
+                    <label class="layui-form-label">文章分类</label>
                     <div class="layui-input-block" style="width: 250px;">
-                        <select name="art_type" lay-filter="aihao" style="width: 250px;">
+                        <select name="art_category" lay-filter="aihao" style="width: 250px;">
                             <option value=""></option>
-                            <option value="1" @if($data->art_type==1) selected="" @endif >经典励志</option>
-                            <option value="2" @if($data->art_type==2) selected="" @endif>心灵鸡汤</option>
-                            <option value="3" @if($data->art_type==3) selected="" @endif>青春校园</option>
-                            <option value="4" @if($data->art_type==4) selected="" @endif>幽默搞笑</option>
+                            @foreach($category as $v)
+                            <option value="{{$v->category_id}}" @if($data->art_category == $v->category_id) selected="selected" @endif>{{$v->category_title}}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
@@ -58,10 +57,9 @@
                     <div class="layui-input-block" style="width: 250px;">
                         <select name="art_tag" lay-filter="aihao" style="width: 250px;">
                             <option value=""></option>
-                            <option value="1" @if($data->art_type==1) selected="" @endif >励志</option>
-                            <option value="2" @if($data->art_type==2) selected="" @endif >鸡汤</option>
-                            <option value="3" @if($data->art_type==3) selected="" @endif >青春</option>
-                            <option value="4" @if($data->art_type==4) selected="" @endif >幽默</option>
+                            @foreach($tag as $v)
+                            <option value="{{$v->tag_id}}" @if($data->art_tag == $v->tag_id) selected="selected" @endif>{{$v->tag_name}}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
